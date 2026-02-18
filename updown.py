@@ -54,7 +54,7 @@ def exploit(ip, port):
     hashes = re.findall(r'[a-f0-9]{32}', r.text)
 
     if not hashes:
-        print("[-] Directory not found. Race condition failed.")
+        print("[-] Directory not found.")
         return
 
     h = hashes[-1]
